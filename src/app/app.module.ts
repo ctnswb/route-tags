@@ -4,12 +4,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RouteTagComponent } from './routeTag/routeTag.component';
+import { RouteTagDeckComponent } from './routeTagDeck/routeTagDeck.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RouteTagComponent
+    RouteTagComponent,
+    RouteTagDeckComponent
   ],
   imports: [
     BrowserModule

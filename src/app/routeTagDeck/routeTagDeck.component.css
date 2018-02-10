@@ -1,0 +1,35 @@
+.deck-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deck-space {
+  min-height: 150px;
+  width: 100%;
+}
+
+@media screen and (min-width: 350px) {
+  .deck-space {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .deck-space {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .deck-space {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .deck-space {
+    width: 20%;
+  }
+  .deck-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
