@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RouteTag } from './routeTag.model';
+
 
 @Component({
   selector: 'route-tag',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./routeTag.component.css']
 })
 export class RouteTagComponent {
-
+  @Input() tag: RouteTag;
 }

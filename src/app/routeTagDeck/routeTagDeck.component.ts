@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RouteTag } from '../routeTag/routeTag.model';
+
 
 @Component({
   selector: 'route-tag-deck',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
 })
 
 export class RouteTagDeckComponent {
-
+  @Input() printTags: RouteTag[];
 }

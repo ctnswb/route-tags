@@ -3,15 +3,22 @@
     <div class="tag-header"></div>
     <div class="tag-text">
       <p class="route-grade">
-        <span class="type">5.</span>
-        <span class="difficulty">10a</span>
+        <span *ngIf="tag.type==='rope'" class="type">5.</span>
+        <span *ngIf="tag.type==='boulder'" class="type">v</span>
+        <span class="difficulty">{{tag.grade}}</span>
       </p>
-      <p class="route-name">Route Name</p>
-      <p class="route-info">Top Rope # 68 &amp; Lead</p>
-      <p class="route-notes">Crack on</p>
-      <span class="set-date">Date</span>
-      <span class="setter">Setter</span>
+      <p class="route-name">{{tag.routeName}}</p>
+      <p *ngIf="tag.type==='rope'" class="route-info">{{tag.routeInfo}}</p>
+
+      <p class="route-notes">{{tag.routeNotes}}</p>
+      <span class="set-date">{{tag.setDate}}</span>
+      <span class="setter">{{tag.setter}}</span>
     </div>
-    <div class="purple-tag"></div>
+    <div *ngIf="tag.color==='purple'" class="tag-color purple"></div>
+    <div *ngIf="tag.color==='blue'" class="tag-color blue"></div>
+    <div *ngIf="tag.color==='pink'" class="tag-color pink"></div>
+    <div *ngIf="tag.color==='red'" class="tag-color red"></div>
+    <div *ngIf="tag.color==='black'" class="tag-color black"></div>
   </div>
 </div>
+<p class="page-break"></p>

@@ -9,9 +9,6 @@
   width: 100%;
   margin:1px;
 }
-.page-break {
-  page-break-before: always;
-}
 
 /*@media screen and (min-width: 350px) {
   .deck-space {

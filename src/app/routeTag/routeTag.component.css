@@ -25,14 +25,33 @@
   background-position: center;
 }
 
-.purple-tag {
+.tag-color {
   position: absolute;
   height: 15%;
   width: 100%;
   bottom: 0;
   display: flex;
-  background: rebeccapurple;
   align-items: flex-end;
+}
+
+.purple {
+  background: rebeccapurple;
+}
+
+.blue {
+  background: royalblue;
+}
+
+.pink {
+  background: violet;
+}
+
+.red {
+  background: orangered;
+}
+
+.black {
+  background: black;
 }
 
 .tag-header {
@@ -121,4 +140,8 @@
   .setter {
     font-size: 41px;
   }
+}
+
+.page-break {
+  page-break-before: always;
 }

@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouteTagComponent } from './routeTag/routeTag.component';
 import { RouteTagDeckComponent } from './routeTagDeck/routeTagDeck.component';
+import { RouteTagListComponent } from './routeTagList/routeTagList.component';
 
 
 
@@ -12,7 +13,8 @@ import { RouteTagDeckComponent } from './routeTagDeck/routeTagDeck.component';
   declarations: [
     AppComponent,
     RouteTagComponent,
-    RouteTagDeckComponent
+    RouteTagDeckComponent,
+    RouteTagListComponent
   ],
   imports: [
     BrowserModule

@@ -1,13 +1,3 @@
 <div id="print-tags" class="deck-container">
-  <p class="page-break"></p>
-  <div class="deck-space"><route-tag></route-tag></div>
-  <p class="page-break"></p>
-  <div class="deck-space"><route-tag></route-tag></div>
-  <p class="page-break"></p>
-  <div class="deck-space"><route-tag></route-tag></div>
-  <p class="page-break"></p>
-  <div class="deck-space"><route-tag></route-tag></div>
-  <p class="page-break"></p>
-  <div class="deck-space"><route-tag></route-tag></div>
-  <p class="page-break"></p>
+  <route-tag *ngFor="let tag of printTags" [tag]="tag"></route-tag>
 </div>
