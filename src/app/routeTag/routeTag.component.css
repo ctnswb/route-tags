@@ -19,6 +19,10 @@
   width: 100%;
   height: 85%;
   text-align: center;
+  background: url("../../assets/S1-Background-Cropped.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .purple-tag {
@@ -33,14 +37,15 @@
 
 .tag-header {
   position: absolute;
-  height: 20%;
+  height: 15%;
   width: 100%;
-  top: 0;
   display: flex;
-  background-image: url("/assets/S1_logo.png");
+  background: url("../../assets/S1_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
   align-items: flex-start;
 }
-
 
 .route-grade {
   position: relative;
