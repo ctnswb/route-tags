@@ -31,44 +31,89 @@
   align-items: flex-end;
 }
 
+.tag-header {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  background-image: url("/assets/S1_logo.png");
+  align-items: flex-start;
+}
+
 
 .route-grade {
   position: relative;
   top: 30%;
+  margin: 0;
 }
 
 .type {
+  font-size: 15vw;
 
 }
 
 .difficulty {
-  font-weight: bold;
+ /* font-weight: bold;*/
+  font-size: 35vw;
 }
 
 .route-name {
   position: relative;
   top: 30%;
+  font-size: 6vw;
+  margin: 0;
 }
 
 .route-info {
   position: relative;
   top: 30%;
   font-weight: bold;
+  font-size: 6vw;
+  margin: 2vw;
 }
 
 .route-notes {
   position: relative;
   top: 30%;
+  font-size: 6vw;
+  margin: 3vw;
 }
 
 .set-date {
   position: absolute;
   left: 3%;
   bottom: 3%;
+  font-size: 8vw;
 }
 
 .setter {
   position: absolute;
   right: 3%;
   bottom: 3%;
+  font-size: 8vw;
+}
+
+@media screen and (min-width: 480px) {
+  .type {
+    font-size: 72px;
+  }
+  .difficulty {
+    font-size: 162px;
+  }
+  .route-name {
+    font-size: 32px;
+  }
+  .route-info {
+    font-size: 32px;
+  }
+  .route-notes {
+    font-size: 32px;
+  }
+  .set-date {
+    font-size: 41px;
+  }
+  .setter {
+    font-size: 41px;
+  }
 }
