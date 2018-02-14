@@ -15,6 +15,6 @@ app.get('/', function(req, res) {
 })
 
 var port = 4567;
-app.listen(port);
+app.listen(process.env.PORT || port);
 
 console.log('Server now listening on port ' + port);
