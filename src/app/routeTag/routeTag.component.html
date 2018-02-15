@@ -6,6 +6,7 @@
         <span *ngIf="tag.type==='rope'" class="type">5.</span>
         <span *ngIf="tag.type==='boulder'" class="type">v</span>
         <span class="difficulty">{{tag.grade}}</span>
+        <span class="letter">{{tag.letter}}</span>
       </p>
       <p class="route-name">{{tag.routeName}}</p>
       <p *ngIf="tag.type==='rope'" class="route-info">{{tag.routeInfo}}</p>
