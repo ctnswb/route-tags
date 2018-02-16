@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { RouteTagComponent } from './routeTag/routeTag.component';
 import { RouteTagDeckComponent } from './routeTagDeck/routeTagDeck.component';
 import { RouteTagListComponent } from './routeTagList/routeTagList.component';
+import { CreateTagComponent } from './createTag/createTag.component';
+
 
 
 
@@ -14,7 +16,8 @@ import { RouteTagListComponent } from './routeTagList/routeTagList.component';
     AppComponent,
     RouteTagComponent,
     RouteTagDeckComponent,
-    RouteTagListComponent
+    RouteTagListComponent,
+    CreateTagComponent
   ],
   imports: [
     BrowserModule
