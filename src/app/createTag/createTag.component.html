@@ -1,0 +1,50 @@
+<div>
+
+<form [formGroup]="createTagForm">
+  <div>
+    <label for="date">Date</label>
+    <input type="date" id="date" formControlName="date">
+  </div>
+  <div>
+    <label for="setter">Setter</label>
+    <input type="text" id="setter" formControlName="setter">
+  </div>
+  <div>
+    <label for="routeName">Route Name</label>
+    <input type="text" id="routeName" formControlName="routeName">
+  </div>
+  <div>
+    <input type="radio" id="boulder" formControlName="type">Boulder
+    <input type="radio" id="rope" formControlName="type">Rope
+  </div>
+  <div>
+    <input type="checkbox" id="tr" formControlName="routeInfo">Top Rope
+    <input type="checkbox" id="lead" formControlName="routeInfo">Lead
+  </div>
+  <div>
+    <label for="trNumber">Top Rope Number</label>
+    <input type="text" id="trNumber" formControlName="routeInfo">
+  </div>
+  <div>
+    <label for="routeNotes">Route Notes</label>
+    <input type="text" id="routeNotes" formControlName="routeNotes">
+  </div>
+  <div>
+    <label for="grade">Grade</label>
+    <input type="text" id="grade" formControlName="grade">
+  </div>
+  <div>
+    <label for="color">Color</label>
+    <select formControlName="color">
+      <option value="red">Red</option>
+      <option value="yellow">Yellow</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
+      <option value="pink">Pink</option>
+      <option value="grey">Grey</option>
+      <option value="black">Black</option>
+    </select>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+</div>
