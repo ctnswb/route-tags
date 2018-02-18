@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  showCreateTag = false;
+  showTagDeck = false;
+
+  onCreateTag(){
+    this.showCreateTag = true;
+  }
+  onShowDeck() {
+    this.showTagDeck = true;
+  }
 }

@@ -1,3 +1,6 @@
-<route-tag-list></route-tag-list>
+<button *ngIf="!showCreateTag" (click)="onCreateTag()">Add a Tag</button>
+<button *ngIf="!showTagDeck" (click)="onShowDeck()">View Tags to Print</button>
 
-<create-tag></create-tag>
+<route-tag-list *ngIf="showTagDeck"></route-tag-list>
+
+<create-tag *ngIf="showCreateTag"></create-tag>
